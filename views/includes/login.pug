@@ -1,0 +1,15 @@
+
+form(action="/users/login", method="POST", class="login-form")
+    img(src="/assets/pictures/man.png")
+    
+    div(class="login-fields")
+        h1 Bejelentkezés
+        input(type="email", name="email", placeholder="e-mail")
+        br
+        input(type="password", name="password", placeholder="jelszó")
+        br
+        input(type="submit", value="Bejelentkezés", class="login-submit")
+        br
+        small Nincs még felhasználója? 
+        a(href="/users/register") Regisztálás
+    

@@ -1,0 +1,24 @@
+
+include messages
+form(action="/users/register",class="register-form", method="POST")
+    img(src="/assets/pictures/man.png")
+    div(class="register-fields")
+        
+        h1 Regisztráció
+        label(for="username") Felhasználónév: 
+        br
+        input(type="text", name="username")
+        br
+        label(for="email") Email: 
+        br
+        input(type="email", name="email")
+        br
+        label(for="password") Jelszó: 
+        br
+        input(type="password", name="password")
+        br
+        label(for="passwordConfirm") Jelszó megerősítés: 
+        br
+        input(type="password", name="passwordConfirm")
+        br
+        input(type="submit",class="register-submit", value="Regisztráció")

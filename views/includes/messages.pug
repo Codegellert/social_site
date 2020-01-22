@@ -1,0 +1,12 @@
+
+div(class='messages')
+    if errors
+        each error in errors
+            small(class='message')= error.msg
+    if success_msg != ''
+        small(class='message')= success_msg
+    if error_msg != ''
+        small(class='message')= error_msg
+    if error != ''
+        small(class='message')= error
+        
